@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortfólioDev - Meus Projetos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">PortfólioDev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portifolio.html">Portfólio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" href="questionario.html">Feedback</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <div class="dropdown">
+                        <button class="btn btn-dark position-relative py-1 px-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-bell fs-5"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">99+</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end shadow">
+                            <li><h6 class="dropdown-header">Notificações</h6></li>
+                            <li><a class="dropdown-item" href="#">Mensagem 1: Proposta de entrevista</a></li>
+                            <li><a class="dropdown-item" href="#">Mensagem 2: Novo projeto disponível</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5 flex-grow-1">
+        <div class="row g-4 justify-content-center">
+            <div class="col-12 col-lg-10">
+
+                <div class="card shadow-sm mb-5">
+                    <div class="card-body p-4">
+                        <h3 class="card-title fw-bold mb-4 fs-4 text-dark"><i class="bi bi-gear me-2 text-primary"></i>Minhas Habilidades (Skills)</h3>
+                        <div class="row g-3">
+                            <div class="col-12 col-sm-6">
+                                <h5 class="fs-6 fw-bold text-secondary mb-2">Hard Skills</h5>
+                                <ul class="list-group">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">HTML / CSS / Bootstrap <i class="bi bi-check-circle-fill text-success"></i></li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">JavaScript & React <i class="bi bi-check-circle-fill text-success"></i></li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">Git & GitHub <i class="bi bi-check-circle-fill text-success"></i></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <h5 class="fs-6 fw-bold text-secondary mb-2">Soft Skills</h5>
+                                <ul class="list-group">
+<li class="list-group-item d-flex justify-content-between align-items-center">Trabalho em Equipe <i class="bi bi-star-fill text-warning"></i></li>
+<li class="list-group-item d-flex justify-content-between align-items-center">Comunicação Assertiva <i class="bi bi-star-fill text-warning"></i></li>
+<li class="list-group-item d-flex justify-content-between align-items-center">Metodologias Ágeis <i class="bi bi-star-fill text-warning"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm">
+                    <div class="card-body p-4">
+                        <h3 class="card-title fw-bold mb-3 fs-4 text-dark"><i class="bi bi-code-slash me-2 text-primary"></i>Trabalhos Realizados no Curso</h3>
+                        <p class="text-muted fs-6 mb-4">Veja abaixo os projetos desenvolvidos até o momento. Clique em qualquer slide para abrir os detalhes em um modal informativo.</p>
+                        
+                        <div id="carouselProjetos" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner bg-dark rounded">
+                                
+                                <div class="carousel-item active" data-bs-toggle="modal" data-bs-target="#modalProjeto1" style="cursor: pointer;">
+                                    <img src="/img/Captura de Tela 2026-06-03 às 10.07.12.png" class="d-block w-100 opacity-75" alt="Projeto 1" style="max-height: 400px; object-fit: cover;">
+                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded p-2 m-2">
+                                        <h5>Estruturação HTML/CSS</h5>
+                                        <p class="mb-0 d-none d-sm-block">Clique aqui para mais informações.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="carousel-item" data-bs-toggle="modal" data-bs-target="#modalProjeto2" style="cursor: pointer;">
+                                    <img src="/img/Plano de voo.png" class="d-block w-100 opacity-75" alt="Projeto 2" style="max-height: 400px; object-fit: cover;">
+                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded p-2 m-2">
+                                        <h5>Site de Piloto</h5>
+                                        <p class="mb-0 d-none d-sm-block">Clique aqui para mais informações.</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item" data-bs-toggle="modal" data-bs-target="#modalProjeto3" style="cursor: pointer;">
+                                    <img src="/img/Cargram.png" class="d-block w-100 opacity-75" alt="Projeto 3" style="max-height: 400px; object-fit: cover;">
+                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded p-2 m-2">
+                                        <h5>Cargram</h5>
+                                        <p class="mb-0 d-none d-sm-block">Clique aqui para mais informações.</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item" data-bs-toggle="modal" data-bs-target="#modalProjeto4" style="cursor: pointer;">
+                                    <img src="/img/Manipulacao de img.png" class="d-block w-100 opacity-75" alt="Projeto 4" style="max-height: 400px; object-fit: cover;">
+                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded p-2 m-2">
+                                        <h5>Manipulação de Imagens</h5>
+                                        <p class="mb-0 d-none d-sm-block">Clique aqui para mais informações.</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item" data-bs-toggle="modal" data-bs-target="#modalProjeto5" style="cursor: pointer;">
+                                    <img src="/img/Manipulacao de videos.png" class="d-block w-100 opacity-75" alt="Projeto 5" style="max-height: 400px; object-fit: cover;">
+                                    <div class="carousel-caption bg-dark bg-opacity-75 rounded p-2 m-2">
+                                        <h5>Manipulação de Vídeos</h5>
+                                        <p class="mb-0 d-none d-sm-block">Clique aqui para mais informações.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjetos" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselProjetos" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Próximo</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-secondary text-center py-3 mt-auto border-top border-secondary">
+        <div class="container">
+            <p class="mb-0 small">&copy; 2026 Marco Antônio. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="modalProjeto1" tabindex="-1" aria-labelledby="modalProjeto1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="modalProjeto1Label">Estruturação HTML/CSS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Nesta primeira fase do curso, o foco total foi no entendimento da semântica estrutural do HTML5 e na estilização pura com seletores CSS.</p>
+                    <ul>
+                        <li>Tags semânticas utilizadas para SEO.</li>
+                        <li>Estudo aprofundado de Box Model e responsividade nativa.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProjeto2" tabindex="-1" aria-labelledby="modalProjeto2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="modalProjeto2Label">Site de piloto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Esta etapa introduziu dinamismo ao código usando lógica computacional.</p>
+                    <ul>
+                        <li>Estruturas de repetição e condicionais estruturadas.</li>
+                        <li>Manipulação básica de Arrays e Objetos no console.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProjeto3" tabindex="-1" aria-labelledby="modalProjeto3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="modalProjeto3Label">Cargram</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Projeto focado no desenvolvimento de interfaces inspiradas em redes sociais automotivas.</p>
+                    <ul>
+                        <li>Disposição estrutural avançada e alinhamento de componentes.</li>
+                        <li>Uso de classes utilitárias para estilização de layouts modernos.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProjeto4" tabindex="-1" aria-labelledby="modalProjeto4Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="modalProjeto4Label">Manipulação de Imagens</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Foco no estudo aprofundado do uso correto de formatos visuais no ambiente web.</p>
+                    <ul>
+                        <li>Análise de formatos e extensões apropriadas para desempenho visual.</li>
+                        <li>Implementação de técnicas de background-image e imagens responsivas.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProjeto5" tabindex="-1" aria-labelledby="modalProjeto5Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="modalProjeto5Label">Manipulação de Vídeos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Desenvolvimento focado na integração e incorporação de mídias dinâmicas na interface.</p>
+                    <ul>
+                        <li>Utilização adequada da tag de vídeo nativa do HTML5.</li>
+                        <li>Configuração de controles e ajustes de proporção de tela adaptáveis.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
